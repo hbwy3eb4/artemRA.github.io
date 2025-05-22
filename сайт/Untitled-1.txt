@@ -1,0 +1,27 @@
+project_structure/
+│
+├── static/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── admin.css
+│   └── js/
+│       └── main.js
+│
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── admin/
+│   │   ├── dashboard.html
+│   │   ├── client_registration.html
+│   │   └── client_management.html
+│   └── client/
+│       └── dashboard.html
+│
+├── app/
+│   ├── init.py
+│   ├── models.py
+│   ├── routes.py
+│   └── utils.py
+│
+├── config.py
+└── requirements.txt

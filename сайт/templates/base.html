@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% for product in products %}
+        <div class="product">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.desc }}</p>
+            <p>{{ product.price }}</p>
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            <p>{{ product.brand.name }}</p>
+            <p>{{ product.category.name }}</p>
+
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
